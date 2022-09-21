@@ -369,4 +369,14 @@ VALUES
 #### para montar relatório com ***geração de atributo***: 'PREÇO_TOTAL' (SERVIÇO + PEÇA)
 ![](./img/preco_servico_e_peca.png)
 
+
+#### Exemplo: junções 'JOIN' envolvendo 3 tabelas para exibir as especializacoes dos mecanicos: 
+
+>SELECT m.nome_mecanico, e.nome_especializacao
+>FROM mecanicos m
+>JOIN mec_espec me ON m.idmecanico = me.mecanicos_idmecanico
+>JOIN especializacoes e ON e.idespecializacao = me.especializacoes_idespecializacao;
+
+![](./img/mecanicos_especializacoes.png)
+
 ---
